@@ -1,0 +1,20 @@
+Script started on 2020-08-07 18:41:59+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="202" LINES="22"]
+]0;leevi@leevi-lap: ~/Documents/Github/devopswithdocker/part1[01;32mleevi@leevi-lap[00m:[01;34m~/Documents/Github/devopswithdocker/part1[00m$ co[K[Kdocker run -d nginx
+5473423b2ec29d590abe8000520fcee9a2ab59d077804f53838fb613da82e5d8
+]0;leevi@leevi-lap: ~/Documents/Github/devopswithdocker/part1[01;32mleevi@leevi-lap[00m:[01;34m~/Documents/Github/devopswithdocker/part1[00m$ c[Kdco[K[Kocker run -d nginx
+39873e05429de2374e68712af1ecae943826fdae75d47ce79ecdc53c97d81d03
+]0;leevi@leevi-lap: ~/Documents/Github/devopswithdocker/part1[01;32mleevi@leevi-lap[00m:[01;34m~/Documents/Github/devopswithdocker/part1[00m$ docker run -d nginx
+67163277cc15762a89400c5cac80d3da09dd56b481c3878ee95ff46ba636b770
+]0;leevi@leevi-lap: ~/Documents/Github/devopswithdocker/part1[01;32mleevi@leevi-lap[00m:[01;34m~/Documents/Github/devopswithdocker/part1[00m$ dock[Kker run [K[K[K[Kstop 67
+67
+]0;leevi@leevi-lap: ~/Documents/Github/devopswithdocker/part1[01;32mleevi@leevi-lap[00m:[01;34m~/Documents/Github/devopswithdocker/part1[00m$ docker stop 39
+39
+]0;leevi@leevi-lap: ~/Documents/Github/devopswithdocker/part1[01;32mleevi@leevi-lap[00m:[01;34m~/Documents/Github/devopswithdocker/part1[00m$ docker ps -q[Ka
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                      PORTS               NAMES
+67163277cc15        nginx               "/docker-entrypoint.…"   About a minute ago   Exited (0) 27 seconds ago                       compassionate_dubinsky
+39873e05429d        nginx               "/docker-entrypoint.…"   About a minute ago   Exited (0) 14 seconds ago                       amazing_goldstine
+5473423b2ec2        nginx               "/docker-entrypoint.…"   About a minute ago   Up About a minute           80/tcp              elated_haibt
+]0;leevi@leevi-lap: ~/Documents/Github/devopswithdocker/part1[01;32mleevi@leevi-lap[00m:[01;34m~/Documents/Github/devopswithdocker/part1[00m$ exit
+exit
+
+Script done on 2020-08-07 18:44:01+03:00 [COMMAND_EXIT_CODE="0"]
