@@ -1,0 +1,2 @@
+docker exec -it 9f189 tail -f ./logs.txt
+Secret message: Docker is easy

@@ -1,0 +1,2 @@
+Starting command: docker run -it --rm name exer ubuntu sh -c 'echo "Input website"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+Fixed command: docker run -it --rm --name exer ubuntu sh -c 'apt-get update; apt-get install curl; echo "Input website"; read website; echo "Searching.."; sleep 1; curl http://$website;'
