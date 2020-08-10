@@ -1,0 +1,1 @@
+docker run -p 8000:8000 -v /home/leevi/Documents/Github/devopswithdocker/test/logs.txt:/backend/logs.txt backend
