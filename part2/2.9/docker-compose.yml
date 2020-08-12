@@ -1,0 +1,29 @@
+version: "3.5"
+
+services:
+    redis:
+        image: redis
+        container_name: redis
+    back:
+        image: back
+        ports: 
+            - 8000:8000
+        container_name: back
+        environment: 
+            - REDIS=redis
+            - DB_USERNAME=postgres
+            - DB_PASSWORD=example
+            - DB_NAME=postgres
+            - DB_HOST=db
+    front:
+        image: front
+        ports: 
+            - 5000:5000
+        container_name: front
+    db: 
+        image: postgres
+        environment:
+            - POSTGRES_PASSWORD=example
+        container_name: pgdb
+        volumes: 
+            - ./data:/var/lib/postgresql/data

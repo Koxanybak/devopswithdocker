@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+    "2.2":
+        image: devopsdockeruh/ports_exercise
+        ports: 
+            - 3000:80
+        container_name: "2.2"

@@ -1,0 +1,31 @@
+version: "3.5"
+
+services: 
+    back:
+        image: km-back
+        build: ../../test/ml-kurkkumopo-backend
+        ports: 
+            - 5000:5000
+        volumes:
+            - model:/src/model
+        container_name: km-back
+    front:
+        image: km-front
+        build: ../../test/ml-kurkkumopo-frontend
+        ports: 
+            - 3000:3000
+        container_name: km-front
+    train:
+        image: km-train
+        build: ../../test/ml-kurkkumopo-training
+        volumes:
+            - model:/src/model
+            - src:/src
+            - imgs:/src/imgs
+        container_name: km-train
+
+
+volumes:
+    model:
+    src:
+    imgs:
