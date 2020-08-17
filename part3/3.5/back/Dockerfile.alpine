@@ -1,0 +1,20 @@
+FROM node:alpine
+
+ENV FRONT_URL=http://localhost:5000
+
+RUN apk add --no-cache \
+    bash curl git && \
+    git clone https://github.com/docker-hy/backend-example-docker backend
+
+WORKDIR /backend
+
+RUN npm install && \
+    apk del curl git && \
+    adduser -D app && \
+    chown -R app /backend/
+
+USER app
+
+EXPOSE 8000
+
+CMD ["npm", "start"]

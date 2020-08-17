@@ -1,0 +1,11 @@
+back:
+    before:
+        415 MB
+    after:
+        172 MB
+
+front:
+    before:
+        592 MB
+    after:
+        349 MB   

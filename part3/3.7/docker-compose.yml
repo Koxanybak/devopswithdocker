@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+    springexample:
+        build:
+            context: .
+            dockerfile: Dockerfile.after
+        container_name: springexample
+        image: springexample
+        ports: 
+            - 8080:8080

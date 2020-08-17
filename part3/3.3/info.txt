@@ -1,0 +1,5 @@
+This script can update the spring-example-project of the course material.
+I wasn't sure if it was forbidden to have a docker-compose file for the updated project,
+so I set one up for the spring project (cloned it and pushed it to my github with the file).
+However, I couldn't figure out how to authorize the push any other way than running the script
+interactively.
